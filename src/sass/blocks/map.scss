@@ -1,0 +1,30 @@
+.map {
+  border: 3px solid black;
+  border-collapse: collapse;
+
+  &--wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+  }
+
+  &__row {
+    padding: 0;
+  }
+
+  &__cell {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    border: 1px solid lighten($primary, 80%);
+    box-sizing: border-box;
+  }
+}

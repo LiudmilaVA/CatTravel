@@ -1,0 +1,132 @@
+.arrow {
+  width: $w;
+  height: $h;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+  user-select: none;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  &:before,
+  &:after{
+    content:'';
+    border-color:transparent;
+    border-style:solid;
+    position: absolute;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  &__step {
+    width: 50px;
+    height: 30px;
+
+    font-size: 16px;
+    text-align: center;
+
+    &--wrapper {
+      margin-bottom: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+// * * * ARROWS * * *
+// arrow-up
+.arrow-up{
+  &:before{
+    @include body(30%,50%,50%,50% - 30%/2);
+  }
+  &:after {
+    @include arrow($w/2,$h/2,-50%,0,bottom);
+  }
+  &:hover:before {
+    background-color: $c-lighten;
+  }
+  &:hover:after {
+    border-bottom-color: $c-lighten;
+  }
+  &:active:before {
+    background-color: $c-darken;
+  }
+  &:active:after {
+    border-bottom-color: $c-darken;
+  }
+
+}
+
+// arrow-right
+.arrow-right{
+  &:before{
+    @include body(50%,30%,50% - 30%/2,0);
+  }
+  &:after {
+    @include arrow($w/2,$h/2,0,50%,left);
+  }
+  &:hover:before {
+    background-color: $c-lighten;
+  }
+  &:hover:after {
+    border-left-color: $c-lighten;
+  }
+  &:active:before {
+    background-color: $c-darken;
+  }
+  &:active:after {
+    border-left-color: $c-darken;
+  }
+
+}
+// arrow-down
+.arrow-down{
+  &:before{
+    @include body(30%,50%,0,50% - 30%/2);
+  }
+  &:after {
+    @include arrow($w/2,$h/2,50%,0,top);
+  }
+  &:hover:before {
+    background-color: $c-lighten;
+  }
+  &:hover:after {
+    border-top-color: $c-lighten;
+  }
+  &:active:before {
+    background-color: $c-darken;
+  }
+  &:active:after {
+    border-top-color: $c-darken;
+  }
+
+}
+
+// arrow-left
+.arrow-left{
+  &:before{
+    @include body(50%,30%,50% - 30%/2,50%);
+  }
+  &:after {
+    @include arrow($w/2,$h/2,0,-50%,right);
+  }
+  &:hover:before {
+    background-color: $c-lighten;
+  }
+  &:hover:after {
+    border-right-color: $c-lighten;
+  }
+  &:active:before {
+    background-color: $c-darken;
+  }
+  &:active:after {
+    border-right-color: $c-darken;
+  }
+
+}

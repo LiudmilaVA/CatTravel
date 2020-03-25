@@ -1,0 +1,11 @@
+$primary: #000000;
+$secondary: #ffffff;
+
+// width of the arrow (icon)
+$w: 40px;
+// height of the arrow (icon)
+$h: $w;
+// color of the arrow (icon)
+$c: #555;
+$c-lighten: #FF8C00;
+$c-darken: darken($c-lighten, 10%);

@@ -1,0 +1,24 @@
+// * * * MIXINS * * *
+// body
+@mixin body( $width , $height , $top , $left ){
+  border: none;
+  background-color: $c;
+  height: $height;
+  width: $width;
+  top: $top;
+  left: $left;
+}
+
+@mixin clearBody{
+  border: none;
+  width: 0;
+  height: 0;
+}
+// arrow
+@mixin arrow( $width , $height , $top , $left, $way){
+  left: $left;
+  top: $top;
+  border-width:$height $width;
+  border-#{$way}-color:$c;
+}
+

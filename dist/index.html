@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pluton Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Pluton test</h1>
+
+    <div class="container">
+        <div class="map--wrapper">
+            <img class="map__image" src="img/cat_Matvey.png" alt="cat Matvey">
+            <table class="map" id="tableMap"></table>
+        </div>
+
+        <div class="navigation">
+            <h2>Navigation</h2>
+            <span class="arrow arrow-up"></span>
+            <span class="arrow arrow-right"></span>
+            <span class="arrow arrow-down"></span>
+            <span class="arrow arrow-left"></span>
+
+            <div class="arrow__step--wrapper">
+                <input type="number" placeholder="0" class="arrow__step arrow__step-up">
+                <input type="number" placeholder="0" class="arrow__step arrow__step-right">
+                <input type="number" placeholder="0" class="arrow__step arrow__step-down">
+                <input type="number" placeholder="0" class="arrow__step arrow__step-left">
+            </div>
+
+            <div class="btn--wrapper">
+                <button class="navigation__btn btn__record">Record</button>
+                <button class="navigation__btn btn__stop">Stop</button>
+                <button class="navigation__btn btn__play">Play</button>
+                <button class="navigation__btn btn__reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

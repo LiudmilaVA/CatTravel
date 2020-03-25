@@ -1,0 +1,10 @@
+@import "variables.scss";
+@import "mixins";
+
+@import "blocks/map";
+@import "blocks/navigation";
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
